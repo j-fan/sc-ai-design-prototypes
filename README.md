@@ -9,7 +9,11 @@ A simple app for designers to create interactive prototypes using React componen
 
 ## Getting Started
 
-### 1. Install Everything
+### 1. Get access to private SafetyCulture packages
+
+sc-web-ui is a private package containing the web implementation of the design system. Log in to NPM by following the instructions [here](https://safetyculture.atlassian.net/wiki/spaces/ENG/pages/11371232/HOW+TO+use+NPM+private+packages#Authentication-(Logging-in)).
+
+### 2. Install Everything
 
 Open your terminal and run this command to install all the tools needed:
 

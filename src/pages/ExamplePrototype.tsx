@@ -1,3 +1,4 @@
+import { Input } from '@safetyculture/sc-web-ui'
 import { useState } from 'react'
 
 function ExamplePrototype() {
@@ -10,7 +11,7 @@ function ExamplePrototype() {
       
       <div>
         <h2>Interactive Example</h2>
-        <input 
+        <Input 
           type="text" 
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}

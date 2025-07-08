@@ -8,7 +8,6 @@ export default defineConfig({
     outDir: 'dist',
     assetsDir: 'assets',
     sourcemap: false,
-    minify: 'terser',
   },
   server: {
     port: 3000,

@@ -1,25 +1,16 @@
-import { useState } from 'react'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
+import HomePage from './pages/HomePage'
+import ExamplePrototype from './pages/ExamplePrototype'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className="App">
-      <div>
-        <h1>Design Prototypes</h1>
-        <div className="card">
-          <button onClick={() => setCount((count) => count + 1)}>
-            count is {count}
-          </button>
-          <p>
-            Start building your design prototypes with React components!
-          </p>
-        </div>
-        <p className="read-the-docs">
-          Add your sc-web-ui components and create amazing prototypes
-        </p>
-      </div>
-    </div>
+    <Router>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/example-prototype" element={<ExamplePrototype />} />
+          {/* Add more prototype routes here */}
+        </Routes>
+    </Router>
   )
 }
 

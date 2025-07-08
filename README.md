@@ -34,3 +34,39 @@ pnpm dev
 - Every time you save a file, the page automatically updates
 - Perfect for designing and testing your prototypes
 
+## Creating New Prototypes
+
+Each prototype gets its own page and URL. Here's how to add a new one:
+
+### 1. Create Your Prototype File
+
+Create a new file in `src/pages/` with your prototype name:
+- File: `src/pages/MyAwesomePrototype.tsx`
+- URL will be: `/#/my-awesome-prototype` (note the hash)
+
+```tsx
+function MyAwesomePrototype() {
+  return (
+    <div>
+      <h1>My Awesome Prototype</h1>
+      <p>Your design content goes here!</p>
+      {/* Add your sc-web-ui components here */}
+    </div>
+  )
+}
+
+export default MyAwesomePrototype
+```
+
+### 2. Add the Route
+
+In `src/App.tsx`, add your new prototype:
+
+```tsx
+// Add import at the top
+import MyAwesomePrototype from './pages/MyAwesomePrototype'
+
+// Add route in the Routes section
+<Route path="/my-awesome-prototype" element={<MyAwesomePrototype />} />
+```
+

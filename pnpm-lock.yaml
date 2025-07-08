@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@safetyculture/icons-react':
+        specifier: ^2.6.5
+        version: 2.6.5(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
       '@safetyculture/sc-web-ui':
         specifier: ^2.5.6
         version: 2.5.6(@safetyculture/illustrations-react@0.5.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(@types/react-dom@17.0.26(@types/react@17.0.87))(@types/react@17.0.87)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(styled-components@5.3.8(@babel/core@7.28.0)(react-dom@17.0.2(react@17.0.2))(react-is@16.13.1)(react@17.0.2))
@@ -562,6 +565,12 @@ packages:
 
   '@safetyculture/icons-react@2.6.3':
     resolution: {integrity: sha512-5YWmFbw1LVUFSG4mKoo59Ctqe3powACM6X/GKvhdSbl3kYmiTjScRsjiUmDnCUpYdsi1pQkmxlr9zkbaimgF9Q==, tarball: https://npm.pkg.github.com/download/@safetyculture/icons-react/2.6.3/f5e43353751bf0ba7b26d77d2904465de1569c48}
+    peerDependencies:
+      react: '*'
+      react-dom: '*'
+
+  '@safetyculture/icons-react@2.6.5':
+    resolution: {integrity: sha512-k/87H8pYb6I3Uh2Cb/IS8W7X8s7eaP80vX0D3Zu0hL16AsKZg4c6euvwcPaokmrTYNu+if2tYb9QGlXtQtF0xQ==, tarball: https://npm.pkg.github.com/download/@safetyculture/icons-react/2.6.5/dfad40e12235968f95feba92c429fe81276c4379}
     peerDependencies:
       react: '*'
       react-dom: '*'
@@ -1460,6 +1469,11 @@ snapshots:
   '@safetyculture/design-tokens@6.0.0': {}
 
   '@safetyculture/icons-react@2.6.3(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
+    dependencies:
+      react: 17.0.2
+      react-dom: 17.0.2(react@17.0.2)
+
+  '@safetyculture/icons-react@2.6.5(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
     dependencies:
       react: 17.0.2
       react-dom: 17.0.2(react@17.0.2)

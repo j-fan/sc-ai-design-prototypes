@@ -74,3 +74,36 @@ import MyAwesomePrototype from './pages/MyAwesomePrototype'
 <Route path="/my-awesome-prototype" element={<MyAwesomePrototype />} />
 ```
 
+## Using the design system
+
+### Icons
+
+To use icons in your prototypes, import them as named components from `@safetyculture/icons-react`. The icon names match the Figma design system exactly (e.g., `Calendar`, `User`, `ArrowRotate`).
+
+**Example:**
+```tsx
+import { Calendar, User } from '@safetyculture/icons-react';
+
+<Calendar size={20} color="#4740D4" />
+<User size={16} color="#545f70" />
+```
+
+- The icon name in the import matches the Figma icon name (PascalCase).
+- You can set the `size` and `color` props as needed.
+
+### Typography
+
+To use typography, import the `Typography` component from `@safetyculture/sc-web-ui`. The `variant` prop matches the Figma design system variant names exactly (e.g., `bodyMedium`, `labelMedium`, `titleMedium`, `overlineSmall`).
+
+**Example:**
+```tsx
+import { Typography } from '@safetyculture/sc-web-ui';
+
+<Typography variant="bodyMedium">
+  Your text here
+</Typography>
+```
+
+- The `variant` prop should match the Figma variant name exactly.
+- Use the `component` prop to set the underlying HTML element (e.g., `span`, `div`, `p`).
+

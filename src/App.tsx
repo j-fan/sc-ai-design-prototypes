@@ -5,6 +5,7 @@ import ScheduleSideSheetPrototype from './pages/ScheduleSideSheetPrototype'
 import InspectionSchedulePrototype from './pages/InspectionSchedulePrototype'
 import SideSheetWithMcpPrototype from './pages/SideSheetWithMcpPrototype'
 import SideSheetWithoutScWebUiPrototype from './pages/SideSheetWithoutScWebUiPrototype'
+import TailwindSideSheetPrototype from './pages/TailwindSideSheetPrototype'
 
 import { ConfigProvider as UIConfigProvider, defaultConfig } from '@safetyculture/sc-web-ui'
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="/inspection-schedule" element={<InspectionSchedulePrototype />} />
           <Route path="/side-sheet-with-mcp" element={<SideSheetWithMcpPrototype />} />
           <Route path="/side-sheet-without-sc-web-ui" element={<SideSheetWithoutScWebUiPrototype />} />
+          <Route path="/tailwind-side-sheet" element={<TailwindSideSheetPrototype />} />
           {/* Add more prototype routes here */}
         </Routes>
     </Router>

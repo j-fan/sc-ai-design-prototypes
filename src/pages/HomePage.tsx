@@ -1,10 +1,11 @@
+import { Typography } from '@safetyculture/sc-web-ui'
 import { Link } from 'react-router-dom'
 
 function HomePage() {
 
   return (
     <div>
-      <h1>Design Prototypes</h1>
+      <Typography variant="titleLarge">Design Prototypes</Typography>
 
       <ul>
         <li><Link to="/example-prototype">Example Prototype</Link></li>
@@ -12,6 +13,7 @@ function HomePage() {
         <li><Link to="/inspection-schedule">Copilot: Inspection Schedule Prototype</Link></li>
         <li><Link to="/side-sheet-with-mcp">SideSheet with MCP Prototype</Link></li>
         <li><Link to="/side-sheet-without-sc-web-ui">SideSheet without sc-web-ui Prototype</Link></li>
+        <li><Link to="/tailwind-side-sheet">Tailwind Side Sheet Prototype</Link></li>
         {/* Add links to new prototypes here */}
       </ul>
     </div>

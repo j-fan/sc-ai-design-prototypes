@@ -90,11 +90,14 @@ import { Typography } from "@safetyculture/sc-web-ui";
 All design system components available from `@safetyculture/sc-web-ui`:
 
 - SideSheet (with HeaderDefaultLayout, BodyDefaultLayout)
-- FooterDefaultLayout
 - PolymorphicButton
 - Typography
 - Badge
-- And more...
+- Table
+- And many more...
+
+Claude will look for the name of the components in the Figma file and search for the matching name in the "@safetyculture/sc-web-ui"
+package or storybook website.
 
 Claude will look up the documentation at https://sandpit-app.safetyculture.com/storybook/sc-web-ui/index.html?path=/docs/documentation-getting-started--docs to learn how to use the components, get code snippets and prop lists.
 

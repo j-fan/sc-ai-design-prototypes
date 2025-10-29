@@ -28,6 +28,9 @@ Claude will use the chrome-devtools MCP to check if the prototype is pixel perfe
 pnpm dev  # Starts dev server at http://localhost:3000
 ```
 
+Claude always checks for errors in the files it edited before starting the server.
+Claude also uses chrome-devtools to open the app in the browser. It will resolve any errors it sees there, either on screen in the console.
+
 ## Creating New Prototypes
 
 ### 1. Create Prototype File

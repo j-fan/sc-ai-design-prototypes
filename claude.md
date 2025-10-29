@@ -22,7 +22,9 @@ Claude will use the chrome-devtools MCP to check if the prototype is pixel perfe
 - `@safetyculture/sc-web-ui` - SafetyCulture design system components
 - `@safetyculture/icons-react` - Icon library
 
-## Running the App
+## Development steps
+
+### 1. Start the dev server and open it in a browser with chrome-devtools MCP
 
 ```bash
 pnpm dev  # Starts dev server at http://localhost:3000
@@ -31,9 +33,7 @@ pnpm dev  # Starts dev server at http://localhost:3000
 Claude always checks for errors in the files it edited before starting the server.
 Claude also uses chrome-devtools to open the app in the browser. It will resolve any errors it sees there, either on screen in the console.
 
-## Creating New Prototypes
-
-### 1. Create Prototype File
+### 2. Create Prototype File
 
 Create a new file in `src/pages/` with the prototype name:
 
@@ -53,7 +53,7 @@ function MyAwesomePrototype() {
 export default MyAwesomePrototype;
 ```
 
-### 2. Add Route to App.tsx
+### 3. Add Route to App.tsx
 
 ```tsx
 // Add import at the top
@@ -63,7 +63,29 @@ import MyAwesomePrototype from "./pages/MyAwesomePrototype";
 <Route path="/my-awesome-prototype" element={<MyAwesomePrototype />} />;
 ```
 
+### 5. Implement the prototype
+
+Claude will look for the name of the components in the Figma file and search for the matching name in the "@safetyculture/sc-web-ui"
+package or storybook website.
+
+All design system components available from `@safetyculture/sc-web-ui`:
+
+- SideSheet (with HeaderDefaultLayout, BodyDefaultLayout)
+- PolymorphicButton
+- Typography
+- Badge
+- Table
+- And many more...
+
+Claude will look up the documentation at https://sandpit-app.safetyculture.com/storybook/sc-web-ui/index.html?path=/docs/documentation-getting-started--docs to learn how to use the components, get code snippets and prop names.
+
+### 4. Navigate to the prototype page
+
+Navigate to the prototype page so the user can see incremental changes in development. For example ``/#/my-awesome-prototype`
+
 ## Using the Design System
+
+Claude will look up the documentation at https://sandpit-app.safetyculture.com/storybook/sc-web-ui/index.html?path=/docs/documentation-getting-started--docs to learn how to use the components, get code snippets and prop names.
 
 ### Icons
 
@@ -88,22 +110,15 @@ import { Typography } from "@safetyculture/sc-web-ui";
 </Typography>;
 ```
 
-### Components
-
-All design system components available from `@safetyculture/sc-web-ui`:
-
-- SideSheet (with HeaderDefaultLayout, BodyDefaultLayout)
-- PolymorphicButton
-- Typography
-- Badge
-- Table
-- And many more...
-
-Claude will look for the name of the components in the Figma file and search for the matching name in the "@safetyculture/sc-web-ui"
-package or storybook website.
-
-Claude will look up the documentation at https://sandpit-app.safetyculture.com/storybook/sc-web-ui/index.html?path=/docs/documentation-getting-started--docs to learn how to use the components, get code snippets and prop lists.
-
 ## Publishing
 
 If the designer asks to publish/share/deploy/etc the prototypes, push the code, run the `pnpm deploy` script and share the url `https://[your-username].github.io/design-prototypes/`.
+
+## Startup behaviour
+
+When a new coding session begins, always ask the user:
+
+1. Have you started the Figma desktop app with the correct frame selected?
+2. What is the Figma frame link for the MCP to connect to?
+3. What should we name this new prototype?
+4. [Any other question you want asked]

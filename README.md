@@ -37,6 +37,14 @@ _This downloads all the code libraries your app needs. You only need to do this 
 
 ## Working with Your App
 
+### Quick Start with Claude Code
+
+If you're using Claude Code, simply type `/proto` to start the interactive prototype creation workflow. Claude will guide you through:
+
+1. Connecting to your Figma design
+2. Naming your prototype
+3. Building the interactive components
+
 ### Starting Your App - `pnpm dev`
 
 This starts your app so you can see it and make changes in real-time.

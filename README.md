@@ -4,13 +4,15 @@ A simple app for designers to create interactive prototypes using React componen
 
 ## What You Need
 
-- Have Node.js installed. Install here https://nodejs.org/en
-- Have pnpm installed. Run this command on your terminal: `npm install -g pnpm@latest-10`
+1. Have Node.js installed. Install here https://nodejs.org/en
+2. Have pnpm installed. Run this command on your terminal: `npm install -g pnpm@latest-10`
 
 For development use either:
 
 - A code editor with AI integration such as Cursor, VSCode or Windsurf.
-  OR
+
+OR
+
 - Claude code with Figma MCP and chrome-devtools MCP. (Best results)
 
 ## Getting Started
@@ -87,22 +89,3 @@ pnpm deploy
 5. Click **Save**
 
 Your app will be live at: `https://[your-username].github.io/design-prototypes/`
-
-**Updates:**
-Just run `pnpm deploy` again whenever you make changes!
-
-**Note:** The `base` path in `vite.config.ts` is set to `/design-prototypes/`. If your repo has a different name, update it to match.
-
-## Documentation
-
-The AI should look up the documentation at https://sandpit-app.safetyculture.com/storybook/sc-web-ui/index.html?path=/docs/documentation-getting-started--docs to learn how to use the components, get code snippets and prop lists.
-
-## Prompting Tips
-
-### Using sc-web-ui
-
-If you want the AI to use sc-web-components, name the components you want to use and copy their code snippets from the storybook at https://sandpit-app.safetyculture.com/storybook/sc-web-ui/index.html?path=/docs/documentation-getting-started--docs to start the prompt.
-
-### Design adjustments
-
-If the design looks off, provide specific instructions on what to fix e.g. Remove the drop shadow from the dialog.

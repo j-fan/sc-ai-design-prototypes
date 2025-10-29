@@ -115,6 +115,10 @@ import { Typography } from "@safetyculture/sc-web-ui";
 - The `variant` prop should match the Figma variant name exactly.
 - Use the `component` prop to set the underlying HTML element (e.g., `span`, `div`, `p`).
 
+## Documentation
+
+The AI should look up the documentation at https://sandpit-app.safetyculture.com/storybook/sc-web-ui/index.html?path=/docs/documentation-getting-started--docs to learn how to use the components, get code snippets and prop lists.
+
 ## Prompting Tips
 
 ### Using sc-web-ui

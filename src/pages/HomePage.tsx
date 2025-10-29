@@ -21,24 +21,28 @@ function HomePage() {
           </Link>
         </li>
         <li>
-          <Link to="/side-sheet-with-mcp">SideSheet with MCP Prototype</Link>
-        </li>
-        <li>
-          <Link to="/side-sheet-without-sc-web-ui">
-            SideSheet without sc-web-ui Prototype
+          <Link to="/side-sheet-with-mcp">
+            Copilot: SideSheet with MCP Prototype
           </Link>
         </li>
         <li>
-          <Link to="/tailwind-side-sheet">Tailwind Side Sheet Prototype</Link>
+          <Link to="/side-sheet-without-sc-web-ui">
+            Copilot: SideSheet without sc-web-ui Prototype
+          </Link>
         </li>
         <li>
-          <Link to="/notifications-settings">
-            Notifications Settings Prototype
+          <Link to="/tailwind-side-sheet">
+            Copilot: Tailwind Side Sheet Prototype
           </Link>
         </li>
         <li>
           <Link to="/schedule-details-with-claude-code">
-            Claude Code: Schedule Details Prototype
+            Claude Code + MCP + DS: Schedule Details Prototype
+          </Link>
+        </li>
+        <li>
+          <Link to="/notifications-settings">
+            Claude Code + MCP + DS: Notifications Settings Prototype
           </Link>
         </li>
         {/* Add links to new prototypes here */}

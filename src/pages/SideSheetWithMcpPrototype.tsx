@@ -3,7 +3,6 @@ import {
   SideSheet,
   FooterDefaultLayout,
   PolymorphicButton,
-  Badge,
   Typography,
 } from '@safetyculture/sc-web-ui';
 import {

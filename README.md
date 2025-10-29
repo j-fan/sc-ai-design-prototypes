@@ -4,10 +4,14 @@ A simple app for designers to create interactive prototypes using React componen
 
 ## What You Need
 
-- A computer with Node.js installed. Install here https://nodejs.org/en
-- Basic familiarity with using the terminal/command line
-- A code editor with AI integration such as Cursor, VSCode or Windsurf
-- Figma Dev Mode MCP
+- Have Node.js installed. Install here https://nodejs.org/en
+- Have pnpm installed. Run this command on your terminal: `npm install -g pnpm@latest-10`
+
+For development use either:
+
+- A code editor with AI integration such as Cursor, VSCode or Windsurf.
+  OR
+- Claude code with Figma MCP and chrome-devtools MCP. (Best results)
 
 ## Getting Started
 
@@ -56,64 +60,38 @@ Create a new file in `src/pages/` with your prototype name:
 - File: `src/pages/MyAwesomePrototype.tsx`
 - URL will be: `/#/my-awesome-prototype` (note the hash)
 
-```tsx
-function MyAwesomePrototype() {
-  return (
-    <div>
-      <h1>My Awesome Prototype</h1>
-      <p>Your design content goes here!</p>
-      {/* Add your sc-web-ui components here */}
-    </div>
-  );
-}
+## Deployment (Sharing Your Prototypes)
 
-export default MyAwesomePrototype;
+### Deploy to GitHub Pages
+
+GitHub Pages is a free hosting service that lets you share your prototypes with anyone via a URL.
+
+#### One-Command Deploy
+
+```bash
+pnpm deploy
 ```
 
-### 2. Add the Route
+**What happens:**
 
-In `src/App.tsx`, add your new prototype:
+1. Builds your app (compiles all your code)
+2. Pushes the built files to a `gh-pages` branch
+3. GitHub automatically hosts it for you
 
-```tsx
-// Add import at the top
-import MyAwesomePrototype from "./pages/MyAwesomePrototype";
+**First-time setup:**
 
-// Add route in the Routes section
-<Route path="/my-awesome-prototype" element={<MyAwesomePrototype />} />;
-```
+1. Make sure your code is pushed to GitHub
+2. After running `pnpm deploy`, go to your GitHub repository
+3. Go to **Settings** → **Pages**
+4. Under "Source", select `gh-pages` branch
+5. Click **Save**
 
-## Using the design system
+Your app will be live at: `https://[your-username].github.io/design-prototypes/`
 
-### Icons
+**Updates:**
+Just run `pnpm deploy` again whenever you make changes!
 
-To use icons in your prototypes, import them as named components from `@safetyculture/icons-react`. The icon names match the Figma design system exactly (e.g., `Calendar`, `User`, `ArrowRotate`).
-
-**Example:**
-
-```tsx
-import { Calendar, User } from '@safetyculture/icons-react';
-
-<Calendar size={20} color="#4740D4" />
-<User size={16} color="#545f70" />
-```
-
-- The icon name in the import matches the Figma icon name (PascalCase).
-- You can set the `size` and `color` props as needed.
-
-### Typography
-
-To use typography, import the `Typography` component from `@safetyculture/sc-web-ui`. The `variant` prop matches the Figma design system variant names exactly (e.g., `bodyMedium`, `labelMedium`, `titleMedium`, `overlineSmall`).
-
-**Example:**
-
-```tsx
-import { Typography } from "@safetyculture/sc-web-ui";
-
-<Typography variant="bodyMedium">Your text here</Typography>;
-```
-
-- The `variant` prop should match the Figma variant name exactly.
-- Use the `component` prop to set the underlying HTML element (e.g., `span`, `div`, `p`).
+**Note:** The `base` path in `vite.config.ts` is set to `/design-prototypes/`. If your repo has a different name, update it to match.
 
 ## Documentation
 

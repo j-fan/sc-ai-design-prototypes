@@ -101,7 +101,6 @@ package or storybook website.
 
 Claude will look up the documentation at https://sandpit-app.safetyculture.com/storybook/sc-web-ui/index.html?path=/docs/documentation-getting-started--docs to learn how to use the components, get code snippets and prop lists.
 
-## Resources
+## Publishing
 
-- Storybook: https://sandpit-app.safetyculture.com/storybook/sc-web-ui/index.html?path=/docs/documentation-getting-started--docs
-- Figma Dev Mode MCP: https://help.figma.com/hc/en-us/articles/32132100833559-Guide-to-the-Dev-Mode-MCP-Server
+If the designer asks to publish/share/deploy/etc the prototypes, push the code, run the `pnpm deploy` script and share the url `https://[your-username].github.io/design-prototypes/`.

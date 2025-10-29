@@ -127,4 +127,4 @@ If you want the AI to use sc-web-components, name the components you want to use
 
 ### Design adjustments
 
-If the design looks off, take a screenshot of the current state and include it as part of the prompt. Provide specific instructions on what to fix e.g. Remove the drop shadow from the dialog.
+If the design looks off, provide specific instructions on what to fix e.g. Remove the drop shadow from the dialog.

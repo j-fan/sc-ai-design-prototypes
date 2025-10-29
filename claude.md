@@ -1,6 +1,12 @@
 # Design Prototypes - Claude Context
 
-A simple app for designers to create interactive prototypes using React components. No coding experience required to get started!
+Claude will help create interactive prototypes using React components for designers.
+Claude will make a new page per prototype and add a link to the Home Page.
+
+## MCP
+
+Claude will use or prompt the designer to use Figma MCP to get details of the design.
+Claude will use the chrome-devtools MCP to check if the prototype is pixel perfect to the design and that it functions as intended.
 
 ## Project Structure
 
@@ -90,16 +96,9 @@ All design system components available from `@safetyculture/sc-web-ui`:
 - Badge
 - And more...
 
-Look up the documentation at https://sandpit-app.safetyculture.com/storybook/sc-web-ui/index.html?path=/docs/documentation-getting-started--docs to learn how to use the components, get code snippets and prop lists.
+Claude will look up the documentation at https://sandpit-app.safetyculture.com/storybook/sc-web-ui/index.html?path=/docs/documentation-getting-started--docs to learn how to use the components, get code snippets and prop lists.
 
 ## Resources
 
 - Storybook: https://sandpit-app.safetyculture.com/storybook/sc-web-ui/index.html?path=/docs/documentation-getting-started--docs
 - Figma Dev Mode MCP: https://help.figma.com/hc/en-us/articles/32132100833559-Guide-to-the-Dev-Mode-MCP-Server
-
-## Prompting Tips
-
-1. Name the sc-web-ui components you want to use
-2. Copy code snippets from Storybook to start the prompt
-3. For design adjustments, take screenshots and provide specific instructions
-4. Use Figma Dev Mode MCP for better results than screenshots

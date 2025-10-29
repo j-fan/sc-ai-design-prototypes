@@ -27,7 +27,7 @@ import {
  * Notifications Settings Prototype
  *
  * Commands used to create this prototype:
- * 1. "Implement this design in the picture as a prototype. Create a new page in src/pages
+ * 1. "Implement this design from Figma as a prototype. Create a new page in src/pages
  *     and use the design system components from @safetyculture/sc-web-ui package.
  *     This design uses the side-sheet."
  * 2. "Make the implementation pixel perfect by looking in the browser"

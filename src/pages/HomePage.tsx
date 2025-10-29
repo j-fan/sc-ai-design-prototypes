@@ -32,10 +32,14 @@ function HomePage() {
           <Link to="/tailwind-side-sheet">Tailwind Side Sheet Prototype</Link>
         </li>
         <li>
-          <Link to="/schedule-details">Schedule Details Prototype</Link>
+          <Link to="/notifications-settings">
+            Notifications Settings Prototype
+          </Link>
         </li>
         <li>
-          <Link to="/notifications-settings">Notifications Settings Prototype</Link>
+          <Link to="/schedule-details-with-claude-code">
+            Claude Code: Schedule Details Prototype
+          </Link>
         </li>
         {/* Add links to new prototypes here */}
       </ul>

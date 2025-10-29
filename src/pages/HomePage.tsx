@@ -45,6 +45,11 @@ function HomePage() {
             Claude Code + MCP + DS: Notifications Settings Prototype
           </Link>
         </li>
+        <li>
+          <Link to="/demo-for-josh">
+            Demo For Josh - Create Schedule Form
+          </Link>
+        </li>
         {/* Add links to new prototypes here */}
       </ul>
     </div>

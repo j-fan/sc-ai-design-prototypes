@@ -98,6 +98,8 @@ import { Calendar, User } from '@safetyculture/icons-react';
 <User size={16} color="#545f70" />
 ```
 
+If a matching icon cannot be found, replace it with an emoji or omit it altogether.
+
 ### Typography
 
 Import `Typography` component from `@safetyculture/sc-web-ui`. The `variant` prop matches Figma variant names exactly (e.g., `bodyMedium`, `labelMedium`, `titleMedium`, `overlineSmall`).

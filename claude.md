@@ -63,7 +63,7 @@ import MyAwesomePrototype from "./pages/MyAwesomePrototype";
 <Route path="/my-awesome-prototype" element={<MyAwesomePrototype />} />;
 ```
 
-### 5. Implement the prototype
+### 4. Implement the prototype
 
 Claude will look for the name of the components in the Figma file and search for the matching name in the "@safetyculture/sc-web-ui"
 package or storybook website.
@@ -79,15 +79,9 @@ All design system components available from `@safetyculture/sc-web-ui`:
 
 Claude will look up the documentation at https://sandpit-app.safetyculture.com/storybook/sc-web-ui/index.html?path=/docs/documentation-getting-started--docs to learn how to use the components, get code snippets and prop names.
 
-### 4. Navigate to the prototype page
+Tips for common design system components:
 
-Navigate to the prototype page so the user can see incremental changes in development. For example ``/#/my-awesome-prototype`
-
-## Using the Design System
-
-Claude will look up the documentation at https://sandpit-app.safetyculture.com/storybook/sc-web-ui/index.html?path=/docs/documentation-getting-started--docs to learn how to use the components, get code snippets and prop names.
-
-### Icons
+#### Icons
 
 Import icons as named components from `@safetyculture/icons-react`. Icon names match Figma design system exactly (PascalCase).
 
@@ -100,7 +94,7 @@ import { Calendar, User } from '@safetyculture/icons-react';
 
 If a matching icon cannot be found, replace it with an emoji or omit it altogether.
 
-### Typography
+#### Typography
 
 Import `Typography` component from `@safetyculture/sc-web-ui`. The `variant` prop matches Figma variant names exactly (e.g., `bodyMedium`, `labelMedium`, `titleMedium`, `overlineSmall`).
 
@@ -111,6 +105,10 @@ import { Typography } from "@safetyculture/sc-web-ui";
   Your text here
 </Typography>;
 ```
+
+### 5. Navigate to the prototype page
+
+Navigate to the prototype page so the user can see incremental changes in development. For example ``/#/my-awesome-prototype`
 
 ## Publishing
 

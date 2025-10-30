@@ -6,3 +6,97 @@ Ask the startup questions to begin a new prototype session:
 4. Is this a new prototype, or are you working on an existing one?
 
 After getting answers, proceed with creating the prototype using the Figma MCP and design system components.
+
+## Development steps
+
+### 1. Start the dev server and open it in a browser with chrome-devtools MCP
+
+Start the browser from chrome-devtools MCP so the designer can get visual feedback sooner.
+
+```bash
+pnpm dev  # Starts dev server at http://localhost:3000
+```
+
+Claude always checks for errors in the files it edited before starting the server.
+Claude also uses chrome-devtools to open the app in the browser. It will resolve any errors it sees there, either on screen in the console.
+
+### 2. Create Prototype File
+
+Create a new file in `src/pages/` with the prototype name:
+
+- File: `src/pages/MyAwesomePrototype.tsx`
+- URL will be: `/#/my-awesome-prototype` (note the hash)
+
+```tsx
+function MyAwesomePrototype() {
+  return (
+    <div>
+      <h1>My Awesome Prototype</h1>
+      {/* Add sc-web-ui components here */}
+    </div>
+  );
+}
+
+export default MyAwesomePrototype;
+```
+
+### 3. Add Route to App.tsx
+
+```tsx
+// Add import at the top
+import MyAwesomePrototype from "./pages/MyAwesomePrototype";
+
+// Add route in the Routes section
+<Route path="/my-awesome-prototype" element={<MyAwesomePrototype />} />;
+```
+
+### 4. Implement the prototype
+
+Claude will look for the name of the components in the Figma file and search for the matching name in the "@safetyculture/sc-web-ui"
+package or storybook website.
+
+All design system components available from `@safetyculture/sc-web-ui`:
+
+- SideSheet (with HeaderDefaultLayout, BodyDefaultLayout)
+- PolymorphicButton
+- Typography
+- Badge
+- Table
+- And many more...
+
+Claude will look up the documentation at https://sandpit-app.safetyculture.com/storybook/sc-web-ui/index.html?path=/docs/documentation-getting-started--docs to learn how to use the components, get code snippets and prop names.
+
+Tips for common design system components:
+
+#### Icons
+
+Import icons as named components from `@safetyculture/icons-react`. Icon names match Figma design system exactly (PascalCase).
+
+```tsx
+import { Calendar, User } from '@safetyculture/icons-react';
+
+<Calendar size={20} color="#4740D4" />
+<User size={16} color="#545f70" />
+```
+
+If a matching icon cannot be found, replace it with an emoji or omit it altogether.
+
+#### Typography
+
+Import `Typography` component from `@safetyculture/sc-web-ui`. The `variant` prop matches Figma variant names exactly (e.g., `bodyMedium`, `labelMedium`, `titleMedium`, `overlineSmall`).
+
+```tsx
+import { Typography } from "@safetyculture/sc-web-ui";
+
+<Typography variant="bodyMedium" component="span">
+  Your text here
+</Typography>;
+```
+
+### 5. Navigate to the prototype page
+
+Navigate to the prototype page so the user can see incremental changes in development. For example ``/#/my-awesome-prototype`
+
+## Publishing
+
+If the designer asks to publish/share/deploy/etc the prototypes, push the code, run the `pnpm deploy` script and share the url `https://[your-username].github.io/design-prototypes/`.

@@ -112,7 +112,7 @@ Navigate to the prototype page so the user can see incremental changes in develo
 
 ## Publishing
 
-If the designer asks to publish/share/deploy/etc the prototypes, push the code, run the `pnpm deploy` script and share the url `https://[your-username].github.io/design-prototypes/`.
+If the designer asks to publish/share/deploy/etc the prototypes, push the code, run the `pnpm run deploy` script and share the url `https://[your-username].github.io/design-prototypes/`.
 
 ## Startup behaviour
 

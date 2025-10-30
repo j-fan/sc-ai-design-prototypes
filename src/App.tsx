@@ -10,6 +10,7 @@ import NotificationsSettingsPrototype from "./pages/NotificationsSettingsPrototy
 import ScheduleDetailsWithClaudeCode from "./pages/ScheduleDetailsWithClaudeCode";
 import ScheduleFormWithClaudeCode from "./pages/ScheduleFormWithClaudeCode";
 import ScheduleFormWithCursor from "./pages/ScheduleFormWithCursor";
+import SignUpFormWithClaudeCode from "./pages/SignUpFormWithClaudeCode";
 
 import {
   ConfigProvider as UIConfigProvider,
@@ -53,6 +54,7 @@ function App() {
           />
           <Route path="/schedule-form-with-claude-code" element={<ScheduleFormWithClaudeCode />} />
           <Route path="/schedule-form-with-cursor" element={<ScheduleFormWithCursor />} />
+          <Route path="/sign-up-form-with-claude-code" element={<SignUpFormWithClaudeCode />} />
           {/* Add more prototype routes here */}
         </Routes>
       </Router>

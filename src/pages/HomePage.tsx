@@ -55,6 +55,11 @@ function HomePage() {
             Cursor: Schedule Form with Cursor
           </Link>
         </li>
+        <li>
+          <Link to="/sign-up-form-with-claude-code">
+            Claude Code + MCP + DS: Sign Up Form
+          </Link>
+        </li>
         {/* Add links to new prototypes here */}
       </ul>
     </div>

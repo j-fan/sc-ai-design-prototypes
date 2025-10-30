@@ -8,7 +8,8 @@ import SideSheetWithoutScWebUiPrototype from "./pages/SideSheetWithoutScWebUiPro
 import TailwindSideSheetPrototype from "./pages/TailwindSideSheetPrototype";
 import NotificationsSettingsPrototype from "./pages/NotificationsSettingsPrototype";
 import ScheduleDetailsWithClaudeCode from "./pages/ScheduleDetailsWithClaudeCode";
-import DemoForJosh from "./pages/DemoForJosh";
+import ScheduleFormWithClaudeCode from "./pages/ScheduleFormWithClaudeCode";
+import ScheduleFormWithCursor from "./pages/ScheduleFormWithCursor";
 
 import {
   ConfigProvider as UIConfigProvider,
@@ -50,7 +51,8 @@ function App() {
             path="/schedule-details-with-claude-code"
             element={<ScheduleDetailsWithClaudeCode />}
           />
-          <Route path="/demo-for-josh" element={<DemoForJosh />} />
+          <Route path="/schedule-form-with-claude-code" element={<ScheduleFormWithClaudeCode />} />
+          <Route path="/schedule-form-with-cursor" element={<ScheduleFormWithCursor />} />
           {/* Add more prototype routes here */}
         </Routes>
       </Router>

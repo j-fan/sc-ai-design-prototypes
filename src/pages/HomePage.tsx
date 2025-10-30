@@ -46,8 +46,13 @@ function HomePage() {
           </Link>
         </li>
         <li>
-          <Link to="/demo-for-josh">
-            Demo For Josh - Create Schedule Form
+          <Link to="/schedule-form-with-claude-code">
+            Claude Code + MCP + DS: Schedule Form
+          </Link>
+        </li>
+        <li>
+          <Link to="/schedule-form-with-cursor">
+            Cursor: Schedule Form with Cursor
           </Link>
         </li>
         {/* Add links to new prototypes here */}

@@ -1,5 +1,5 @@
 /**
- * DemoForJosh Prototype
+ * ScheduleFormWithClaudeCode Prototype
  *
  * User Instructions/Messages:
  * 1. "make this design https://www.figma.com/design/uCtloQrEAHZWkBGhEUNq9f/%F0%9F%97%93%EF%B8%8F-EA-to-GA-UI?node-id=361-39055&t=RqhkkRFFhNLtGUck-1, call it DemoForJosh"
@@ -8,6 +8,8 @@
  * 4. "In a comment above the prototype component, list out all the instructions/messages I have given you"
  * 5. "the grey background doesn't extend to the bottom of the content when scrolled down"
  * 6. "we are back to the old problem with the white gap at the top of the content"
+ * 7. "publish the prototype"
+ * 8. "rename the 'demo for josh' prototype to 'ScheduleFormWithClaudeCode'"
  */
 
 import { useState } from 'react';
@@ -21,9 +23,9 @@ import {
   Circle,
   CircleInfo
 } from '@safetyculture/icons-react';
-import DemoForJoshConfirmation from './DemoForJoshConfirmation';
+import ScheduleFormWithClaudeCodeConfirmation from './ScheduleFormWithClaudeCodeConfirmation';
 
-function DemoForJosh() {
+function ScheduleFormWithClaudeCode() {
   const [lateCompletionEnabled, setLateCompletionEnabled] = useState(false);
   const [notifyStart, setNotifyStart] = useState(false);
   const [notify60Min, setNotify60Min] = useState(false);
@@ -35,7 +37,7 @@ function DemoForJosh() {
 
   if (showConfirmation) {
     return (
-      <DemoForJoshConfirmation
+      <ScheduleFormWithClaudeCodeConfirmation
         onBack={() => setShowConfirmation(false)}
         onSchedule={() => alert('Schedule created successfully!')}
       />
@@ -538,4 +540,4 @@ function DemoForJosh() {
   );
 }
 
-export default DemoForJosh;
+export default ScheduleFormWithClaudeCode;

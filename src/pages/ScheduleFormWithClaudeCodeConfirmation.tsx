@@ -13,12 +13,12 @@ import {
   CircleInfo
 } from '@safetyculture/icons-react';
 
-interface DemoForJoshConfirmationProps {
+interface ScheduleFormWithClaudeCodeConfirmationProps {
   onBack?: () => void;
   onSchedule?: () => void;
 }
 
-function DemoForJoshConfirmation({ onBack, onSchedule }: DemoForJoshConfirmationProps) {
+function ScheduleFormWithClaudeCodeConfirmation({ onBack, onSchedule }: ScheduleFormWithClaudeCodeConfirmationProps) {
   const handleScheduleNow = () => {
     if (onSchedule) {
       onSchedule();
@@ -330,4 +330,4 @@ function DemoForJoshConfirmation({ onBack, onSchedule }: DemoForJoshConfirmation
   );
 }
 
-export default DemoForJoshConfirmation;
+export default ScheduleFormWithClaudeCodeConfirmation;

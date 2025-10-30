@@ -79,7 +79,7 @@ GitHub Pages is a free hosting service that lets you share your prototypes with 
 #### One-Command Deploy
 
 ```bash
-pnpm deploy
+pnpm run deploy
 ```
 
 **What happens:**
@@ -91,7 +91,7 @@ pnpm deploy
 **First-time setup:**
 
 1. Make sure your code is pushed to GitHub
-2. After running `pnpm deploy`, go to your GitHub repository
+2. After running `pnpm run deploy`, go to your GitHub repository
 3. Go to **Settings** → **Pages**
 4. Under "Source", select `gh-pages` branch
 5. Click **Save**

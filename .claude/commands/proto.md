@@ -19,6 +19,7 @@ pnpm dev  # Starts dev server at http://localhost:3000
 
 Claude always checks for errors in the files it edited before starting the server.
 Claude also uses chrome-devtools to open the app in the browser. It will resolve any errors it sees there, either on screen in the console.
+Claude always describes in plain English what it is doing, so that the designer can understand.
 
 ### 2. Create Prototype File
 

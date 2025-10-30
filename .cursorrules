@@ -1,13 +1,15 @@
-# Design Prototypes - Claude Context
+# Design Prototypes - Cursor Rules
 
-Claude will help create interactive prototypes using React components for designers.
-Claude will make a new page per prototype and add a link to the Home Page.
-Claude always describes in plain English what it is doing, so that the designer can understand.
+Cursor will help create interactive prototypes using React components for designers.
+Cursor will make a new page per prototype and add a link to the Home Page.
+Cursor always describes in plain English what it is doing, so that the designer can understand.
 
-## MCP
+## MCP and Browser Integration
 
-Claude will use or prompt the designer to use Figma MCP to get details of the design.
-Claude will use the chrome-devtools MCP to check if the prototype is pixel perfect to the design and that it functions as intended.
+Cursor will use or prompt the designer to use Figma MCP to get details of the design.
+Cursor will use its built-in browser integration to check if the prototype is pixel perfect to the design and that it functions as intended.
+
+Note: The chrome-devtools MCP mentioned in the original claude.md is a specific tool for Claude Code. Cursor has its own browser integration capabilities that serve a similar purpose for debugging and visual verification.
 
 ## Project Structure
 
@@ -25,14 +27,14 @@ Claude will use the chrome-devtools MCP to check if the prototype is pixel perfe
 
 ## Development steps
 
-### 1. Start the dev server and open it in a browser with chrome-devtools MCP
+### 1. Start the dev server and open it in a browser
 
 ```bash
 pnpm dev  # Starts dev server at http://localhost:3000
 ```
 
-Claude always checks for errors in the files it edited before starting the server.
-Claude also uses chrome-devtools to open the app in the browser. It will resolve any errors it sees there, either on screen in the console.
+Cursor always checks for errors in the files it edited before starting the server.
+Cursor will use its browser integration to open the app in the browser and help resolve any errors it sees there, either on screen or in the console.
 
 ### 2. Create Prototype File
 
@@ -66,7 +68,7 @@ import MyAwesomePrototype from "./pages/MyAwesomePrototype";
 
 ### 4. Implement the prototype
 
-Claude will look for the name of the components in the Figma file and search for the matching name in the "@safetyculture/sc-web-ui"
+Cursor will look for the name of the components in the Figma file and search for the matching name in the "@safetyculture/sc-web-ui"
 package or storybook website.
 
 All design system components available from `@safetyculture/sc-web-ui`:
@@ -78,7 +80,7 @@ All design system components available from `@safetyculture/sc-web-ui`:
 - Table
 - And many more...
 
-Claude will look up the documentation at https://sandpit-app.safetyculture.com/storybook/sc-web-ui/index.html?path=/docs/documentation-getting-started--docs to learn how to use the components, get code snippets and prop names.
+Cursor will look up the documentation at https://sandpit-app.safetyculture.com/storybook/sc-web-ui/index.html?path=/docs/documentation-getting-started--docs to learn how to use the components, get code snippets and prop names.
 
 Tips for common design system components:
 

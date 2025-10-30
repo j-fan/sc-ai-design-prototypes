@@ -64,6 +64,8 @@ import MyAwesomePrototype from "./pages/MyAwesomePrototype";
 <Route path="/my-awesome-prototype" element={<MyAwesomePrototype />} />;
 ```
 
+Navigate to the prototype page so the user can see incremental changes in development. For example ``/#/my-awesome-prototype`
+
 ### 4. Implement the prototype
 
 Claude will look for the name of the components in the Figma file and search for the matching name in the "@safetyculture/sc-web-ui"
@@ -107,9 +109,20 @@ import { Typography } from "@safetyculture/sc-web-ui";
 </Typography>;
 ```
 
-### 5. Navigate to the prototype page
+#### Illustrations
 
-Navigate to the prototype page so the user can see incremental changes in development. For example ``/#/my-awesome-prototype`
+Illustrations are imported from `@safetyculture/illustrations-react`. Example: `import { ActionDeleted } from "@safetyculture/illustrations-react";`. The name of the illustration in Figma should match the name in the package exactly.
+If no match is found, use an emoji that matches the context. Documentation on illustrations can be found here: https://sandpit-app.safetyculture.com/storybook/sc-web-ui/index.html?path=/docs/foundations-illustrations--docs
+
+#### Loading state
+
+Most components have a loading state. If not, use the Spinner component from `@safetyculture/sc-web-ui` for loading states. The `size` prop accepts CSS width values (e.g., "1rem", "2rem", "48px").
+
+```tsx
+import { Spinner } from "@safetyculture/sc-web-ui";
+
+<Spinner size="2rem" />;
+```
 
 ## Publishing
 

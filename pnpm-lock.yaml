@@ -11,9 +11,12 @@ importers:
       '@safetyculture/icons-react':
         specifier: ^2.6.5
         version: 2.6.5(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+      '@safetyculture/illustrations-react':
+        specifier: ^0.7.0
+        version: 0.7.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
       '@safetyculture/sc-web-ui':
         specifier: ^2.5.6
-        version: 2.5.6(@safetyculture/illustrations-react@0.5.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(@types/react-dom@17.0.26(@types/react@17.0.87))(@types/react@17.0.87)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(styled-components@5.3.8(@babel/core@7.28.0)(react-dom@17.0.2(react@17.0.2))(react-is@16.13.1)(react@17.0.2))
+        version: 2.5.6(@safetyculture/illustrations-react@0.7.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(@types/react-dom@17.0.26(@types/react@17.0.87))(@types/react@17.0.87)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(styled-components@5.3.8(@babel/core@7.28.0)(react-dom@17.0.2(react@17.0.2))(react-is@16.13.1)(react@17.0.2))
       lodash.isequal:
         specifier: ^4.5.0
         version: 4.5.0
@@ -610,8 +613,8 @@ packages:
       react: '*'
       react-dom: '*'
 
-  '@safetyculture/illustrations-react@0.5.2':
-    resolution: {integrity: sha512-K7mAYAWNG+vEm/tad3UFA0qjaX9i3ynnm1mGZJUolVVo7pWesr0VCzalUyXzEBrLGLNk18HYhwb76ly6BGseig==, tarball: https://npm.pkg.github.com/download/@safetyculture/illustrations-react/0.5.2/a30570bff17aa858dd75cf18873a5a4a41b0827a}
+  '@safetyculture/illustrations-react@0.7.0':
+    resolution: {integrity: sha512-TI4GQwzbSAUbTC3nORCQ6+FNhdY8G2aX6GjqfYwcqbfnHsl24tcLCMY33lDhPs061tYcntMFaIzOPP1Vfrt20g==, tarball: https://npm.pkg.github.com/download/@safetyculture/illustrations-react/0.7.0/f1efd374ef127c081d1ce8f4d4a7ae5c9b12b861}
     peerDependencies:
       react: '*'
       react-dom: '*'
@@ -1975,18 +1978,18 @@ snapshots:
       react: 17.0.2
       react-dom: 17.0.2(react@17.0.2)
 
-  '@safetyculture/illustrations-react@0.5.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
+  '@safetyculture/illustrations-react@0.7.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
     dependencies:
       react: 17.0.2
       react-dom: 17.0.2(react@17.0.2)
 
-  '@safetyculture/sc-web-ui@2.5.6(@safetyculture/illustrations-react@0.5.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(@types/react-dom@17.0.26(@types/react@17.0.87))(@types/react@17.0.87)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(styled-components@5.3.8(@babel/core@7.28.0)(react-dom@17.0.2(react@17.0.2))(react-is@16.13.1)(react@17.0.2))':
+  '@safetyculture/sc-web-ui@2.5.6(@safetyculture/illustrations-react@0.7.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(@types/react-dom@17.0.26(@types/react@17.0.87))(@types/react@17.0.87)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(styled-components@5.3.8(@babel/core@7.28.0)(react-dom@17.0.2(react@17.0.2))(react-is@16.13.1)(react@17.0.2))':
     dependencies:
       '@floating-ui/react': 0.26.12(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
       '@radix-ui/react-checkbox': 1.0.4(@types/react-dom@17.0.26(@types/react@17.0.87))(@types/react@17.0.87)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
       '@safetyculture/design-tokens': 6.0.0
       '@safetyculture/icons-react': 2.6.3(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@safetyculture/illustrations-react': 0.5.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+      '@safetyculture/illustrations-react': 0.7.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
       '@tanstack/react-table': 8.15.3(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
       ariakit: 2.0.0-next.33(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
       embla-carousel-react: 8.1.5(react@17.0.2)

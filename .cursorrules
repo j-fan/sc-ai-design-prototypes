@@ -7,7 +7,7 @@ Cursor always describes in plain English what it is doing, so that the designer 
 ## MCP and Browser Integration
 
 Cursor will use or prompt the designer to use Figma MCP to get details of the design.
-Cursor will use its built-in browser integration to check if the prototype is pixel perfect to the design and that it functions as intended.
+Cursor will use its built-in browser integration to check if it functions as intended.
 
 Note: The chrome-devtools MCP mentioned in the original claude.md is a specific tool for Claude Code. Cursor has its own browser integration capabilities that serve a similar purpose for debugging and visual verification.
 

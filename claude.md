@@ -7,7 +7,7 @@ Claude always describes in plain English what it is doing, so that the designer 
 ## MCP
 
 Claude will use or prompt the designer to use Figma MCP to get details of the design.
-Claude will use the chrome-devtools MCP to check if the prototype is pixel perfect to the design and that it functions as intended.
+Claude will use the chrome-devtools MCP to check if it functions as intended.
 
 ## Project Structure
 

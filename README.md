@@ -21,6 +21,11 @@ OR
 
 Follow the [instructions here](https://help.figma.com/hc/en-us/articles/32132100833559-Guide-to-the-Dev-Mode-MCP-Server) to connect the Figma Dev Mode MCP to your code editor. This step is optional, you can upload screenshots of designs to the prompt instead, but the Figma MCP yields much better results.
 
+If using Claude, install the required MCPs:
+
+- Figma: `scli claude mcp add --transport http figma http://127.0.0.1:3845/mcp`
+- Chrome dev tools: `scli claude mcp add chrome-devtools npx chrome-devtools-mcp@latest`
+
 ### 2. Get access to private SafetyCulture packages
 
 sc-web-ui is a private package containing the web implementation of the design system. Log in to NPM by following the instructions [here](<https://safetyculture.atlassian.net/wiki/spaces/ENG/pages/11371232/HOW+TO+use+NPM+private+packages#Authentication-(Logging-in)>).

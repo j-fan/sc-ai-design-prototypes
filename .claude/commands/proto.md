@@ -9,6 +9,11 @@ After getting answers, proceed with creating the prototype using the Figma MCP a
 
 ## Development steps
 
+### 0. Check the required MCPs are installed
+
+Figma: `scli claude mcp add --transport http figma http://127.0.0.1:3845/mcp`
+Chrome dev tools: `scli claude mcp add chrome-devtools npx chrome-devtools-mcp@latest`
+
 ### 1. Start the dev server and open it in a browser with chrome-devtools MCP
 
 Start the browser from chrome-devtools MCP so the designer can get visual feedback sooner.

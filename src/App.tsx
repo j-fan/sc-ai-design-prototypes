@@ -6,12 +6,12 @@ import InspectionSchedulePrototype from "./pages/InspectionSchedulePrototype";
 import SideSheetWithMcpPrototype from "./pages/SideSheetWithMcpPrototype";
 import SideSheetWithoutScWebUiPrototype from "./pages/SideSheetWithoutScWebUiPrototype";
 import TailwindSideSheetPrototype from "./pages/TailwindSideSheetPrototype";
-import NotificationsSettingsPrototype from "./pages/NotificationsSettingsPrototype";
 import ScheduleDetailsWithClaudeCode from "./pages/ScheduleDetailsWithClaudeCode";
 import ScheduleFormWithClaudeCode from "./pages/ScheduleFormWithClaudeCode";
 import ScheduleFormWithCursor from "./pages/ScheduleFormWithCursor";
 import SignUpFormWithClaudeCode from "./pages/SignUpFormWithClaudeCode";
 import ForgotPassword from "./pages/ForgotPassword";
+import OrganizationSettings from "./pages/OrganizationSettings";
 
 import {
   ConfigProvider as UIConfigProvider,
@@ -46,17 +46,26 @@ function App() {
             element={<TailwindSideSheetPrototype />}
           />
           <Route
-            path="/notifications-settings"
-            element={<NotificationsSettingsPrototype />}
-          />
-          <Route
             path="/schedule-details-with-claude-code"
             element={<ScheduleDetailsWithClaudeCode />}
           />
-          <Route path="/schedule-form-with-claude-code" element={<ScheduleFormWithClaudeCode />} />
-          <Route path="/schedule-form-with-cursor" element={<ScheduleFormWithCursor />} />
-          <Route path="/sign-up-form-with-claude-code" element={<SignUpFormWithClaudeCode />} />
+          <Route
+            path="/schedule-form-with-claude-code"
+            element={<ScheduleFormWithClaudeCode />}
+          />
+          <Route
+            path="/schedule-form-with-cursor"
+            element={<ScheduleFormWithCursor />}
+          />
+          <Route
+            path="/sign-up-form-with-claude-code"
+            element={<SignUpFormWithClaudeCode />}
+          />
           <Route path="/forgot-password" element={<ForgotPassword />} />
+          <Route
+            path="/organization-settings"
+            element={<OrganizationSettings />}
+          />
           {/* Add more prototype routes here */}
         </Routes>
       </Router>

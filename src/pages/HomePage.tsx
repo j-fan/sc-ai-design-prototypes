@@ -41,11 +41,6 @@ function HomePage() {
           </Link>
         </li>
         <li>
-          <Link to="/notifications-settings">
-            Claude Code + MCP + DS: Notifications Settings Prototype
-          </Link>
-        </li>
-        <li>
           <Link to="https://www.figma.com/make/JoNkJK2CPAAdyOPLmGw37v/Notification-Settings-Prototype?node-id=0-1&p=f&t=imH4HdMBsXAiwUtY-0&fullscreen=1">
             Figma Make: Notifications Settings Prototype
           </Link>
@@ -71,6 +66,11 @@ function HomePage() {
         <li>
           <Link to="/forgot-password">
             Claude Code + MCP + DS: Forgot Password Flow
+          </Link>
+        </li>
+        <li>
+          <Link to="/organization-settings">
+            Claude Code + MCP + DS: Organization Settings (Notification Preferences)
           </Link>
         </li>
         {/* Add links to new prototypes here */}

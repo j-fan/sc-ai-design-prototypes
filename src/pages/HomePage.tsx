@@ -68,6 +68,11 @@ function HomePage() {
             Claude Code + MCP + DS: Sign Up Form
           </Link>
         </li>
+        <li>
+          <Link to="/forgot-password">
+            Claude Code + MCP + DS: Forgot Password Flow
+          </Link>
+        </li>
         {/* Add links to new prototypes here */}
       </ul>
     </div>
